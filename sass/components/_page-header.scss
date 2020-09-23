@@ -24,18 +24,16 @@
 .menu__link {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
-
   color: getColor(title-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-    &--current{
+  &--current{
   color: getColor(accent);
 
   &::after{  content: "";
@@ -56,6 +54,13 @@
 .contacts-header {
   display: flex;
   margin-left: auto;
+
+  &__icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
 }
 
 .contacts-header__item:not(:last-child) {
@@ -64,9 +69,7 @@
 
 .contacts-header__link {
   display: flex;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -77,13 +80,4 @@
     &:focus {
   color: getColor(accent);
 }
-
-}
-
-
-.contacts-header__icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
 }

@@ -5,18 +5,8 @@
 
 .work-list {
   display: flex;
-}
 
-.work-list__item {
-  position: relative;
-  flex-basis: calc((100% - 2 * 30px) / 3);
-
-  &:not(:last-child) {
-  margin-right: 30px;
-}
-}
-
-.work-list__text {
+  &__text {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -31,4 +21,14 @@
   text-transform: uppercase;
   color: getColor(white-text);
   background-color: rgba(47, 48, 58, 0.8);
+}
+}
+
+.work-list__item {
+  position: relative;
+  flex-basis: calc((100% - 2 * 30px) / 3);
+
+  &:not(:last-child) {
+  margin-right: 30px;
+}
 }

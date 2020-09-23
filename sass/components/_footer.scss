@@ -7,6 +7,11 @@
   display: flex;
   align-items: baseline;
 }
+
+.logo {
+  display: block;
+  margin-bottom: 20px;
+}
 }
 
 .text-footer {
@@ -42,14 +47,15 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
 
-.address__text {
+  &__text {
   display: block;
   margin-bottom: 9px;
-
   color: getColor(white-text);
 }
+}
+
+
 
 .address__item {
   display: block;

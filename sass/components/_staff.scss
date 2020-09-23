@@ -5,6 +5,29 @@
 .staff-list {
   display: flex;
   flex-wrap: wrap;
+
+  &__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+  &__title {
+  color: getColor(title-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+  &__text {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 }
 
 .staff-list__item {
@@ -18,28 +41,4 @@
   margin-right: 30px;
 }
 }
-
-.staff-list__content {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.staff-list__title {
-  color: getColor(title-text);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.3;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.staff-list__text {
-  margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 
